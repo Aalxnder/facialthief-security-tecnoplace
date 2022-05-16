@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');*
+{
+    box-sizing:border-box;
+    font-family: 'Source Sans Pro','sans serif';
+    margin: 0;
+}
+
+.left
+{
+    float: left;
+}
+
+.right
+{
+    float: right;
+}
+
+
+/* Header */
+.container
+{
+    margin: auto;
+    max-width: 1700px;
+    padding: 0.6rem;
+}
+
+header
+{
+    position: fixed;
+    background-color: rgb(42, 149, 211);
+    width: 100%;
+    max-width: 1700px;
+    padding: 2rem 0;
+    z-index: 10;
+}
+
+header a
+{
+    color: white;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+.logo
+{
+    letter-spacing: 5px;
+    font-size: .8em;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 10px;
+}
+.logo:hover
+{
+    background-color: rgb(135, 206, 235);
+}
+
+.navigation
+{
+    float: right;
+    margin: 10px;
+}
+
+.navigation li
+{
+    display: inline;
+    font-size: 20px;
+    margin: auto;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.navigation li a
+{
+    display: inline;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 10px;
+}
+.navigation li a:hover
+{
+    background-color: rgb(135, 206, 235);
+}
+
+/* presentation */
+.presentation
+{
+    height: 720px;
+    font-size: 25px;
+    width: 100%;
+    max-width:1000 px;
+}
+.presentation-video
+{
+    padding-top: 6.9rem;
+    height: 720px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* max-width: 1700px; */
+    z-index: -1;
+}
+.presentation-video video
+{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    max-width: 1600px; 
+    
+}
+.darkoverlay 
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    max-width: 1700px;
+}
+.presentation-content
+{
+    color: white;
+    text-align: center;
+    padding: 285px 0;
+    margin: auto;
+}
+
+/* .presentation-content h3 
+{
+    font-size: 20px;
+}*/
+hr
+{
+    height: 10px;
+    background-color: rgb(42, 149, 211);
+}
+
+/* seccion de about us */
+.aboutus
+{
+    height: 500px;
+    font-size: 18px;
+    background-color: rgb(209, 241, 253);
+    z-index: -2;
+}
+
+.about-container
+{
+    width: 50%;
+    height: 100%;
+    color: black;
+    
+}
+.about-content
+{
+    position: relative;
+    top: -30px;
+    left: 10px;
+    text-align: justify;
+    font-size: 22px;
+    padding: 10px 30px;
+    
+}
+
+.about-title
+{
+    position: relative;
+    top: -40px;
+    left: -60px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+#about-img1
+{
+    background: url(/loginPHPrecursos/assets/images/seg1.jpg);
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+/* seccion de historia */
+.history
+{
+    height: 500px;
+    font-size: 18px;
+    background-color: rgb(209, 241, 253);
+    z-index: -2;
+}
+.history-container
+{
+    width: 50%;
+    height: 100%;
+    color: black;
+}
+.history-content
+{
+    position: relative;
+    top: 50px;
+    left: 10px;
+    text-align: justify;
+    font-size: 22px;
+    padding: 10px 30px;
+}
+.history-title
+{
+    position: relative;
+    top: -40px;
+    left: -60px;
+    text-align: center;
+    font-size: 30px;
+}
+#history-img2
+{
+    background: url(/loginPHPrecursos/assets/images/img2.jpg);
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+/* seccion de nuestros servicios */
+.servicios
+{
+    height: 1000px;
+    font-size: 24px;
+    background-color: rgb(209, 241, 253);
+    z-index: -10;
+}
+
+.servicios .services-container
+{
+    position: absolute;
+    top: 1780px;
+    left: 90px;
+    width: 90%;
+    height: 900px;
+    border-radius: 20px;
+    background-color: rgb(88, 148, 221);
+}
+.servicios .subtitle
+{
+    font-size: 40px;
+}
+.services-title
+{
+    position: relative;
+    top: 100px;
+    left: 650px;
+    font-size: 40px;
+    color: white;
+}
+
+div.services
+{
+    position: relative;
+    top: 150px;
+    left: 185px;
+    margin: 20px 37px;
+    box-shadow: 0 4px 8px 0 lightskyblue, o 6px 20px 0 rgba(0,0,0,0.19);
+    float: left;
+    width: 350px;
+}
+
+div.services img
+{
+    width: 100%;
+    height: 30%;
+    border-radius: 20px;
+}
+div.services:hover
+{
+    transform: rotate(-3deg);
+}
+div.pie
+{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    padding: 10px;
+}
+
+/* seccion de sospechosos */
+.sospechosos
+{
+    height: 500px;
+    font-size: 24px ;
+    background-color: rgb(209, 241, 253);
+    z-index: -10;
+}
+.fondo
+{
+    position: absolute;
+    top: 2800px;
+    left: 90px;
+    width: 90%;
+    height: 900px;
+    border-radius: 20px;
+    background-color: rgb(88, 148, 221);
+}
+
+.fondo2
+{
+    position: absolute;
+    top: 2900px;
+    left: 400px;
+    width: 50%;
+    height: 700px;
+    border-radius: 20px;
+    background-color: rgb(26, 59, 100);
+}
+.sospechosos h2
+{
+    position: relative;
+    top: 0px;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+.sospechosos .input
+{
+    position: relative;
+    top: 50px;
+    left: 650px;
+    color: white;
+    border-radius: 10px;
+}
+
+.sospechosos .img1
+{
+    border-radius: 20px;
+    position: relative;
+    top: 500px;
+    left: 620px;
+}
+
+
+/* FOOTER */
+.pie-pagina
+{
+    width: 100%;
+    background-color: rgb(48, 44, 44);
+}
+
+.pie-pagina .grupo1
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo1 .box figure
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo1 .box figure img
+{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.pie-pagina .grupo1 .box h2
+{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 35px;
+}
+
+.pie-pagina .grupo1 .box
+{
+    color: white;
+    width: 400px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo1 .box
+{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo1 .redsocial
+{
+    text-decoration: none;
+    list-style: none;
+    width: 65px;
+    height: 65px;
+    line-height: 45px;
+    margin-right: 40px;
+    color: white;
+    text-align: center;
+    transition: all 300ms ease;
+    display: inline;
+    letter-spacing: 10px;
+}
+
+.pie-pagina .grupo1 .redsocial a:hover
+{
+    color: aqua;
+}
+
+.pie-pagina .user .imguser
+{
+    border-radius: 50px;
+}
+
+.pie-pagina .grupo2
+{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+.pie-pagina .grupo1 p
+{
+    font-size: 15px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.pie-pagina .grupo1 .salir
+{
+    position: relative;
+    top: 50px;
+    left: -100px;
+    font-size: 20px;
+}
+.pie-pagina .grupo1 .salir:hover
+{
+    color: aqua;
+}
+
+
+
+@media only screen and (max-width:767px)
+{
+    .navigation
+    {
+        float: left;
+        margin: 10px;
+        margin-top: 1rem ;
+        width: 100%;
+    }
+    
+    .navigation ul 
+    {
+        display: block;
+    }
+
+    .navigation ul li
+    {
+        display: inline;
+        font-size: 20px;
+        margin: auto;
+        list-style: none;
+        flex-wrap: wrap;
+    }  
+
+    .navigation ul li a
+    {
+        display: block;
+        padding: 0.5rem 0;
+        transition: all 0.4s linear;
+        border-radius: 10px;
+    }
+    .navigation ul li a:hover
+    {
+        background-color: rgb(135, 206, 235);
+    }
+    /* FOOTER */
+    .pie-pagina .grupo1
+    {
+        width: 75%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    .pie-pagina .grupo1 .box figure img
+    {
+        width: 90%;
+        height: 50%;
+        border-radius: 50%;
+    }
+}
